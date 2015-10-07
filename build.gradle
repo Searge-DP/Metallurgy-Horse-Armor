@@ -20,6 +20,10 @@ repositories {
         name = "Team Metallurgy Maven"
         url = "http://shadow.gcod.net/maven"
     }
+    maven {
+        name = "Epoxide Maven"
+        url = "http://maven.cubedlc.com"
+    }
 }
 
 apply plugin: 'forge'
@@ -34,6 +38,7 @@ minecraft {
 }
 
 dependencies {
+    compile "net.epoxide.mha:MHA:1.0:deobf"
     compile "com.teammetallurgy:Metallurgy:1.7.10-4.0.8.128:deobf"
 }
 
