@@ -1,0 +1,16 @@
+[
+{
+  "modid": "MetallurgyHorseArmor",
+  "name": "Metallurgy Horse Armor",
+  "description": "Horse armor for the Metallurgy Mod!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Darkhax", "lclc98"],
+  "credits": "Credits to the Metallurgy team for making the Metallurgy mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
