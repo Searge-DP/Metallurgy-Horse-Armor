@@ -38,24 +38,13 @@ minecraft {
 }
 
 dependencies {
-    compile "net.epoxide.mha:MHA:1.7.10-1.0.7:deobf"
+    compile "net.epoxide.mha:MoreHorseArmor:1.7.10-1.0.2:deobf"
     compile "com.teammetallurgy:Metallurgy:1.7.10-4.0.8.128:deobf"
 }
 
-ext.artifact_version = 'NFG'
-if (System.getenv().ARTIFACT_VERSION == null) {
-    artifact_version = "${version}.${project.buildInfo.buildNum}"
-}
-
-if(System.getenv().ARTIFACT_VERSION != null) {
-    artifact_version = "${system.getenv().ARTIFACT_VERSION}"
-}
-
-version = "1.7.10-${artifact_version}"
-
 processResources {
     // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.artifact_version
+    inputs.property "version", project.version
     inputs.property "mcversion", project.minecraft.version
 
     // replace stuff in mcmod.info, nothing else
@@ -63,7 +52,7 @@ processResources {
         include 'mcmod.info'
 
         // replace version and mcversion
-        expand 'version': project.artifact_version, 'mcversion': project.minecraft.version
+        expand 'version': project.version, 'mcversion': project.minecraft.version
     }
 
     // copy everything else, thats not the mcmod.info
