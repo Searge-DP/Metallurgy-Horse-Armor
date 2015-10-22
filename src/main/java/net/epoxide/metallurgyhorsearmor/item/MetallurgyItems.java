@@ -65,7 +65,6 @@ public class MetallurgyItems {
         
         for (HorseArmorTier tier : MetallurgyItems.sets.values()) {
             
-            MHAConfigurationHandler.configureArmorTier(tier);
             tier.setItem(new ItemHorseArmorBase(tier));
             ItemManager.addTierRecipe(tier);
         }
