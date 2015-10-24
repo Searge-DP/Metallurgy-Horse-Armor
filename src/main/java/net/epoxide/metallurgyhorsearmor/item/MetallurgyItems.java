@@ -2,7 +2,6 @@ package net.epoxide.metallurgyhorsearmor.item;
 
 import java.util.HashMap;
 
-import net.epoxide.mha.handler.MHAConfigurationHandler;
 import net.epoxide.mha.item.HorseArmorTier;
 import net.epoxide.mha.item.ItemHorseArmorBase;
 import net.epoxide.mha.item.ItemManager;
@@ -12,7 +11,7 @@ public class MetallurgyItems {
     /**
      * Map of all metallurgy horse armor tiers.
      */
-    public static HashMap<String, HorseArmorTier> sets = new HashMap();
+    public static HashMap<String, HorseArmorTier> sets = new HashMap<String, HorseArmorTier>();
     
     public MetallurgyItems() {
         

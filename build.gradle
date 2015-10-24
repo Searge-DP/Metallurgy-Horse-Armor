@@ -36,12 +36,11 @@ archivesBaseName = "MetallurgyHorseArmor"
 
 minecraft {
     version = "1.7.10-10.13.4.1517-1.7.10"
-    runDir = "eclipse"
+    runDir = "run"
 }
 
 dependencies {
     compile "net.epoxide.mha:MoreHorseArmor:1.7.10-0.1.0.10:deobf"
-    compile "com.teammetallurgy:Metallurgy:1.7.10-4.0.8.128:deobf"
 }
 
 
