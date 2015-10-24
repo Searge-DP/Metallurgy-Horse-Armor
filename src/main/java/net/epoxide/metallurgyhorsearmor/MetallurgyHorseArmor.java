@@ -8,7 +8,7 @@ import net.epoxide.metallurgyhorsearmor.common.ProxyCommon;
 import net.epoxide.metallurgyhorsearmor.item.MetallurgyItems;
 import net.epoxide.metallurgyhorsearmor.util.Constants;
 
-@Mod(modid = Constants.MOD_ID, name = Constants.MOD_NAME, version = Constants.VERSION_NUMBER, dependencies = "required-after:bookshelf;required-after:MoreHorseArmor;required-after:Metallurgy")
+@Mod(modid = Constants.MOD_ID, name = Constants.MOD_NAME, version = Constants.MOD_VERSION, dependencies = "required-after:bookshelf;required-after:MoreHorseArmor;required-after:Metallurgy")
 public class MetallurgyHorseArmor {
     
     @SidedProxy(clientSide = Constants.CLIENT_PROXY_CLASS, serverSide = Constants.SERVER_PROXY_CLASS)
